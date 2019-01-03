@@ -1,0 +1,56 @@
+#!/bin/bash
+action=$CNAB_ACTION
+
+# if [[ action == "install" ]]; then
+# echo "Iam running http application.json for hello world"
+#  node service.js
+# elif [[ action == "uninstall" ]]; then
+# echo "uninstalling http"
+# fi
+cd /cnab/app/myapp-fargate/bin
+
+case $action in
+    install)
+    echo -e "\nInstall action"
+    npm run build
+    npm install -g npm
+    cd /cnab/app/myapp-fargate
+    echo -e "\nlisting CDK stacks..."
+    cdk  ls -l
+    echo -e "\nSyntesizing CFN templates"
+    cdk synth 
+    echo -e "\nDifferentiating with deployed stack"
+    cdk diff 
+    echo -e "\ndeploying..."
+    cdk deploy 
+;;
+
+    uninstall)
+    echo -e "\ndestroying the stack"
+    cdk destroy fargate -f
+    ;;
+
+    upgrade)
+    echo "Upgrade action"
+    ;;
+
+    downgrade)
+    echo "Downgrade action"
+    ;;
+
+    status)
+    echo "Status action"
+    echo -e "\nlisting CDK stacks..."
+    cdk ls -l
+    echo -e "\nSyntesizing CFN templates"
+    cdk synth fargate
+    echo -e "\nDifferentiating with deployed stack"
+    cdk diff fargate
+    ;;
+
+    *)
+    echo "No action for $action"
+    ;;
+esac
+
+echo "Action $action complete for $name"

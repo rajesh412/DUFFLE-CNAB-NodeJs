@@ -1,0 +1,39 @@
+{
+    "name": "fargate-ecs",
+    "version": "0.1.0",
+    "description": "A short description of your bundle",
+    "keywords": [
+        "fargate-ecs",
+        "cnab",
+        "tutorial"
+    ],
+    "maintainers": [
+        {
+            "name": "Rajesh Bandaru",
+            "email": "raj.rajesh412@gmail.com"
+        }
+
+    ],
+    "invocationImages": {
+        "cnab": {
+            "name": "cnab",
+            "builder": "docker",
+            "configuration": {
+                "registry": "rajesh412"
+            }
+        }
+    },
+
+    "credentials": {
+        "AWS_ACCESS_KEY_ID": {
+            "env": "AWS_ACCESS_KEY_ID"
+        },
+        "AWS_DEFAULT_REGION": {
+            "env": "AWS_DEFAULT_REGION"
+        },
+        "AWS_SECRET_ACCESS_KEY": {
+            "env": "AWS_SECRET_ACCESS_KEY"
+        }
+
+    }    
+}
