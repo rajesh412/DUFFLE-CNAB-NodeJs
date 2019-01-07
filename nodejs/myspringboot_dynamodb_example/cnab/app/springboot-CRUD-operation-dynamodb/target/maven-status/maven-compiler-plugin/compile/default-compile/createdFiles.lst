@@ -1,0 +1,5 @@
+com/example/crudspringbootdynamodb/config/DynamoDBConfig.class
+com/example/crudspringbootdynamodb/entity/Student.class
+com/example/crudspringbootdynamodb/dao/StudentDAO.class
+com/example/crudspringbootdynamodb/controller/StudentController.class
+com/example/crudspringbootdynamodb/CrudSpringbootDynamodbApplication.class

@@ -1,0 +1,5 @@
+/home/rajesh/Downloads/GIT/nodejs/myspringboot_dynamodb_example/cnab/app/springboot-CRUD-operation-dynamodb/src/main/java/com/example/crudspringbootdynamodb/entity/Student.java
+/home/rajesh/Downloads/GIT/nodejs/myspringboot_dynamodb_example/cnab/app/springboot-CRUD-operation-dynamodb/src/main/java/com/example/crudspringbootdynamodb/CrudSpringbootDynamodbApplication.java
+/home/rajesh/Downloads/GIT/nodejs/myspringboot_dynamodb_example/cnab/app/springboot-CRUD-operation-dynamodb/src/main/java/com/example/crudspringbootdynamodb/dao/StudentDAO.java
+/home/rajesh/Downloads/GIT/nodejs/myspringboot_dynamodb_example/cnab/app/springboot-CRUD-operation-dynamodb/src/main/java/com/example/crudspringbootdynamodb/config/DynamoDBConfig.java
+/home/rajesh/Downloads/GIT/nodejs/myspringboot_dynamodb_example/cnab/app/springboot-CRUD-operation-dynamodb/src/main/java/com/example/crudspringbootdynamodb/controller/StudentController.java

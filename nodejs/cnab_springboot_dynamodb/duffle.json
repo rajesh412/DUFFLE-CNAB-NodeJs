@@ -1,0 +1,31 @@
+{
+    "name": "cnab_springboot_dynamodb",
+    "version": "0.1.0",
+    "description": "A short description of your bundle",
+    "keywords": [
+        "cnab_springboot_dynamodb",
+        "cnab",
+        "tutorial"
+    ],
+    "maintainers": [
+        {
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "url": "https://example.com"
+        },
+        {
+            "name": "Jane Doe",
+            "email": "jane.doe@example.com",
+            "url": "https://example.com"
+        }
+    ],
+    "invocationImages": {
+        "cnab": {
+            "name": "cnab",
+            "builder": "docker",
+            "configuration": {
+                "registry": "deislabs"
+            }
+        }
+    }
+}
